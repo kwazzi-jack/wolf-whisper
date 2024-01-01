@@ -1,17 +1,20 @@
 [tool.poetry]
-name = "wolf-whisper"
+name = "wolfwhisper"
 version = "0.1.0"
 description = "Using the OpenAI whisper model, create a voice-to-math generator using the Wolfram Alpha API to create LaTeX expressions."
 authors = ["Brian Welman <brianallisterwelman@gmail.com>"]
 license = "GNU General Public License v3.0"
 readme = "README.md"
-packages = [{include = "wolf_whisper"}]
+packages = [{include = "wolfwhisper"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 openai-whisper = "^20230124"
 wolframalpha = "^5.0.0"
 pyaudio = "^0.2.13"
+sympy = "^1.11.1"
+saytex = "^0.1.6"
+wolframclient = "^1.1.7"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.2.1"
